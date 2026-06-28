@@ -23,6 +23,6 @@ describe('removeFromArray', () => {
     expect(removeFromArray(['hey', 2, 3, 'ho'], 'hey', 3)).toEqual([2, 'ho']);
   });
   test('only removes same type', () => {
-    expect(removeFromArray([1, 2, 3], '1', 3)).toEqual([1, 2]);
+    (removeFromArray([1, 2, 3], '1', 3)).toEqual([1, 2]);
   });
 });
